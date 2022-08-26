@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>asdfghjk</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css')}}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Sentiment Analysis</a></li>
+							<li><a href="#three">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Sentiment Analysis</h1>
+							<p>Designed by <a href="https://kartheek3197.github.io/">Kartheek Manda</a>.<br />
+							You can find my Portifolio <a href="https://kartheek3197.github.io/">here</a>.</p>
+							
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<!--<a class="image"><img src="images/download.jpg" alt="" data-position="center center" /></a>-->
+							<div class="content">
+								<div class="inner">
+									<form action="/predict" method="POST">
+										<label for="review_text">Input Review Text</label>
+										  <textarea name="review_text" rows="10" cols="30"></textarea>>
+										<br>
+										<input type="submit" value="Send Text">
+									  </form>
+								</div>
+							</div>
+						</section>
+					</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>If the site/model appeals you, do provide some comments, feedback, constructive criticism, etc..</p>
+							<div class="split style1">
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Email</h3>
+											<a href="mailto:kartheek3197@gmail.com?subject = Job opening &body = Message">kartheek3197@gmail.com</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(519) 984-4855</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="https://www.linkedin.com/in/kartheekmanda/">LinkedIn</a></li>
+												<li><a href="https://github.com/kartheek3197?tab=repositories">GitHub</a></li>
+												
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Kartheek Manda</li>
+					</ul>
+				</div>
+			</footer>
+			
+		<!-- Scripts -->
+			<script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static',filename='js/jquery.scrollex.min.js') }}"></script>
+			<script src="{{ url_for('static',filename='js/jquery.scrolly.min.js') }}"></script>
+			<script src="{{ url_for('static',filename='js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static',filename='js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static',filename='js/util.js') }}"></script>
+			<script src="{{ url_for('static',filename='js/main.js') }}"></script>
+
+	</body>
+</html>
